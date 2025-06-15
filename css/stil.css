@@ -1,0 +1,121 @@
+
+@font-face {
+  font-family: 'PetarBralic';
+  src: url('../fonts/PetarBralic.ttf') format('truetype');
+}
+
+body {
+  margin: 0;
+  font-family: Arial, sans-serif;
+  line-height: 1.6;
+  background-image: url("slike/tvoja-slika.jpg");
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center center;
+  background-attachment: fixed; /* Opcionalno, za efekt fiksne slike */
+  //background-size: cover;
+  //background-position: center;
+  //background-repeat: no-repeat;
+  color: #fff;
+}
+
+header {
+  background-color: rgba(0, 0, 0, 0.6);
+  padding: 20px;
+  text-align: center;
+}
+
+h1 {
+  font-family: 'PetarBralic', sans-serif;
+  font-size: 4em;
+  color: #20A0BA;
+  margin: 0;
+}
+
+h2 {
+  font-size: 1.5em;
+  color: #20A0BA;
+}
+
+nav {
+  background: #333;
+  overflow: hidden;
+}
+
+nav ul {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+  text-align: center;
+}
+
+nav ul li {
+  display: inline;
+}
+
+nav ul li a {
+  display: inline-block;
+  padding: 14px 20px;
+  text-decoration: none;
+  color: #fff;
+}
+
+nav ul li a.active, nav ul li a:hover {
+  background-color: #20A0BA;
+}
+
+main {
+  padding: 20px;
+  background-color: rgba(41,110,128,0.5);
+  max-width: 960px;
+  margin: 20px auto;
+  border-radius: 10px;
+}
+/* Centriran i razvuÄŤen lokalni video */
+.video-local-wrapper {
+  display: flex;
+  justify-content: center; /* centriranje */
+  margin-bottom: 30px;
+}
+
+.video-local-wrapper video {
+  width: 100%;
+  max-width: 800px; /* maksimalna Ĺˇirina */
+  height: auto;
+  border-radius: 6px;
+  box-shadow: 1px 1px 8px rgba(0,0,0,0.15);
+}
+.row {
+  display: flex;
+  flex-wrap: wrap;
+  padding: 0 4px;
+}
+
+/* Create four equal columns that sits next to each other 
+.column {
+  flex: 50%;
+  max-width: 50%;
+  padding: 0 4px;
+}*/
+
+.column img {
+  margin-top: 8px;
+  vertical-align: middle;
+  width: 100%;
+}
+
+/* Responsive layout - makes a two column-layout instead of four columns
+@media screen and (max-width: 1200px) {
+  .column {
+    flex: 50%;
+    max-width: 50%;
+  }
+} */
+
+/* Responsive layout - makes the two columns stack on top of each other instead of next to each other */
+/*@media screen and (max-width: 600px) {
+  .column {
+    flex: 100%;
+    max-width: 100%;
+  }
+}*/
